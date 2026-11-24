@@ -1,0 +1,1256 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>审问tk丨vk挠脚心 - 视频品牌官网_原创影像内容生态</title>
+<meta name="description" content="审问tk丨vk挠脚心官方网站，专注原创影像与创作者社区的企业级视频平台，提供高清正版内容、创作者生态与品牌故事。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a4a'/%3E%3Cpath d='M22 18l24 14-24 14z' fill='%23f5c542'/%3E%3C/svg%3E">
+<style>
+:root{
+  --sv-navy:#16233d;
+  --sv-navy-2:#1f3357;
+  --sv-ink:#0d1526;
+  --sv-gold:#f5c542;
+  --sv-gold-2:#e0a92b;
+  --sv-paper:#f6f4ef;
+  --sv-paper-2:#ece8df;
+  --sv-line:#d8d2c4;
+  --sv-text:#25303f;
+  --sv-muted:#6b7280;
+  --sv-white:#ffffff;
+  --sv-radius:14px;
+  --sv-shadow:0 10px 30px rgba(22,35,61,.10);
+  --sv-head-h:118px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sv-head-h);}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--sv-text);
+  background:var(--sv-paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+h1,h2,h3,h4{margin:0 0 .5em;line-height:1.3;color:var(--sv-navy);}
+p{margin:0 0 1em;}
+ul{margin:0;padding:0;list-style:none;}
+.sv-wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto;}
+.sv-section{padding:64px 0;}
+.sv-section--tight{padding:44px 0;}
+.sv-eyebrow{
+  display:inline-block;font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--sv-gold-2);font-weight:700;margin-bottom:10px;
+}
+.sv-h2{font-size:clamp(24px,3vw,34px);letter-spacing:.01em;}
+.sv-h3{font-size:19px;}
+.sv-lead{color:var(--sv-muted);max-width:62ch;}
+.sv-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* ---------- 吸顶公告条 + 页头 ---------- */
+.sv-topbar{position:sticky;top:0;z-index:60;}
+.sv-notice{
+  background:linear-gradient(90deg,var(--sv-navy) 0%,var(--sv-navy-2) 60%,#2b4270 100%);
+  color:#f3f1ea;font-size:13.5px;
+  display:flex;align-items:center;gap:14px;
+  padding:9px 0;overflow:hidden;
+}
+.sv-notice .sv-wrap{display:flex;align-items:center;gap:12px;flex-wrap:nowrap;}
+.sv-notice-tag{
+  flex:none;background:var(--sv-gold);color:var(--sv-ink);
+  font-weight:800;font-size:12px;letter-spacing:.06em;
+  padding:2px 9px;border-radius:999px;
+}
+.sv-notice-track{display:flex;gap:34px;white-space:nowrap;animation:svSlide 26s linear infinite;min-width:0;}
+.sv-notice-track span{opacity:.94;}
+@keyframes svSlide{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion:reduce){.sv-notice-track{animation:none;}}
+.sv-header{
+  background:rgba(246,244,239,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--sv-line);
+}
+.sv-header-inner{display:flex;align-items:center;gap:26px;padding:14px 0;}
+.sv-brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--sv-navy);font-size:18px;letter-spacing:.02em;}
+.sv-brand-mark{
+  width:40px;height:40px;border-radius:11px;flex:none;
+  background:linear-gradient(140deg,var(--sv-navy),#2f4a7d);
+  display:grid;place-items:center;
+}
+.sv-brand-mark svg{width:20px;height:20px;}
+.sv-brand small{display:block;font-weight:600;font-size:11px;color:var(--sv-muted);letter-spacing:.14em;}
+.sv-nav{display:flex;gap:4px;margin-left:8px;flex:1;flex-wrap:wrap;}
+.sv-nav a{
+  padding:8px 12px;border-radius:9px;font-size:14.5px;font-weight:600;color:#3b4757;
+  transition:background .18s,color .18s;
+}
+.sv-nav a:hover,.sv-nav a:focus-visible{background:#e7e2d6;color:var(--sv-navy);outline:none;}
+.sv-search{position:relative;flex:none;width:230px;}
+.sv-search input{
+  width:100%;padding:9px 14px 9px 36px;border-radius:999px;border:1px solid var(--sv-line);
+  background:var(--sv-white);font-size:14px;color:var(--sv-text);outline:none;
+  transition:border-color .18s,box-shadow .18s;
+}
+.sv-search input:focus{border-color:var(--sv-navy-2);box-shadow:0 0 0 3px rgba(31,51,87,.12);}
+.sv-search-ico{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:15px;height:15px;opacity:.55;}
+.sv-search-hint{
+  position:absolute;left:0;right:0;top:calc(100% + 8px);background:var(--sv-white);
+  border:1px solid var(--sv-line);border-radius:12px;box-shadow:var(--sv-shadow);
+  padding:8px;font-size:13px;color:var(--sv-muted);display:none;
+}
+.sv-search-hint.is-on{display:block;}
+.sv-search-hint b{color:var(--sv-navy);}
+.sv-burger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--sv-line);background:var(--sv-white);flex:none;}
+.sv-burger span{display:block;width:18px;height:2px;background:var(--sv-navy);margin:3px auto;border-radius:2px;transition:.2s;}
+@media(max-width:960px){
+  .sv-burger{display:block;}
+  .sv-nav{
+    display:none;order:5;flex-basis:100%;flex-direction:column;
+    background:var(--sv-white);border:1px solid var(--sv-line);border-radius:12px;
+    padding:8px;margin-top:6px;
+  }
+  .sv-nav.is-open{display:flex;}
+  .sv-search{width:100%;order:4;flex-basis:100%;margin-top:8px;}
+  .sv-header-inner{flex-wrap:wrap;gap:12px;}
+}
+
+/* ---------- 首屏：左文右侧大图 + 数据条 ---------- */
+.sv-hero{padding:56px 0 48px;background:
+  radial-gradient(1200px 500px at 88% -10%,rgba(245,197,66,.22),transparent 60%),
+  linear-gradient(180deg,#fbf9f4,#f6f4ef);}
+.sv-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
+.sv-hero h1{font-size:clamp(34px,4.6vw,58px);letter-spacing:-.01em;line-height:1.15;margin-bottom:18px;}
+.sv-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;
+  color:var(--sv-navy);background:#fff;border:1px solid var(--sv-line);
+  padding:5px 13px;border-radius:999px;margin-bottom:20px;
+}
+.sv-hero-tag i{width:7px;height:7px;border-radius:50%;background:#2fbf71;display:inline-block;}
+.sv-hero-desc{font-size:16.5px;color:#465260;max-width:56ch;margin-bottom:26px;}
+.sv-hero-desc strong{color:var(--sv-navy);}
+.sv-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px;}
+.sv-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:11px;
+  font-weight:700;font-size:14.5px;transition:transform .16s,box-shadow .16s,background .16s;
+}
+.sv-btn-primary{background:var(--sv-navy);color:#fff;box-shadow:0 8px 20px rgba(22,35,61,.22);}
+.sv-btn-primary:hover{transform:translateY(-2px);background:#20305a;}
+.sv-btn-gold{background:var(--sv-gold);color:var(--sv-ink);}
+.sv-btn-gold:hover{transform:translateY(-2px);background:var(--sv-gold-2);}
+.sv-btn-ghost{border:1px solid var(--sv-line);background:#fff;color:var(--sv-navy);}
+.sv-btn-ghost:hover{border-color:var(--sv-navy);}
+.sv-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:520px;}
+.sv-stat{
+  background:#fff;border:1px solid var(--sv-line);border-radius:12px;padding:14px 16px;
+}
+.sv-stat b{display:block;font-size:24px;color:var(--sv-navy);line-height:1.2;font-variant-numeric:tabular-nums;}
+.sv-stat span{font-size:12.5px;color:var(--sv-muted);}
+.sv-hero-visual{position:relative;}
+.sv-hero-frame{
+  border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(22,35,61,.24);
+  border:6px solid #fff;background:#fff;
+}
+.sv-hero-frame img{width:100%;aspect-ratio:16/11;object-fit:cover;}
+.sv-hero-float{
+  position:absolute;right:-14px;bottom:-22px;background:var(--sv-navy);color:#fff;
+  border-radius:14px;padding:14px 18px;box-shadow:0 16px 34px rgba(22,35,61,.32);
+  max-width:230px;
+}
+.sv-hero-float b{display:block;color:var(--sv-gold);font-size:13px;letter-spacing:.1em;margin-bottom:4px;}
+.sv-hero-float span{font-size:13.5px;line-height:1.55;display:block;opacity:.92;}
+@media(max-width:900px){
+  .sv-hero-grid{grid-template-columns:1fr;gap:36px;}
+  .sv-hero-float{position:static;margin-top:16px;max-width:none;}
+}
+
+/* ---------- 关键词解析 / 深度解析长文 ---------- */
+.sv-parse{background:var(--sv-white);border-top:1px solid var(--sv-line);border-bottom:1px solid var(--sv-line);}
+.sv-parse-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:50px;align-items:start;}
+.sv-parse-body p{font-size:15.6px;color:#3c4858;}
+.sv-parse-body h3{margin-top:26px;}
+.sv-parse-side{position:sticky;top:calc(var(--sv-head-h) + 18px);display:flex;flex-direction:column;gap:14px;}
+.sv-side-card{background:var(--sv-paper);border:1px solid var(--sv-line);border-radius:var(--sv-radius);padding:20px;}
+.sv-side-card h4{font-size:15px;margin-bottom:10px;}
+.sv-side-card ul li{font-size:13.6px;color:#4a5566;padding:6px 0;border-bottom:1px dashed var(--sv-line);display:flex;gap:8px;}
+.sv-side-card ul li:last-child{border-bottom:none;}
+.sv-side-card ul li i{color:var(--sv-gold-2);font-style:normal;font-weight:800;}
+@media(max-width:900px){
+  .sv-parse-grid{grid-template-columns:1fr;}
+  .sv-parse-side{position:static;}
+}
+
+/* ---------- 焦点内容（一幅重点大图 + 文字列表） ---------- */
+.sv-focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:38px;align-items:start;}
+.sv-focus-main{
+  background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--sv-line);
+  box-shadow:var(--sv-shadow);
+}
+.sv-focus-cover{position:relative;}
+.sv-focus-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.sv-focus-badge{
+  position:absolute;left:16px;top:16px;background:var(--sv-gold);color:var(--sv-ink);
+  font-size:12px;font-weight:800;padding:4px 11px;border-radius:999px;letter-spacing:.06em;
+}
+.sv-focus-play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.sv-focus-play span{
+  width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.86);
+  display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.24);
+}
+.sv-focus-play span::after{
+  content:"";width:0;height:0;border-left:16px solid var(--sv-navy);
+  border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px;
+}
+.sv-focus-body{padding:22px 24px 24px;}
+.sv-focus-body h3{font-size:21px;margin-bottom:8px;}
+.sv-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px;}
+.sv-tag{
+  font-size:12px;color:#43506a;background:#eef1f7;border-radius:999px;padding:3px 10px;font-weight:600;
+}
+.sv-tag--gold{background:#fdf2cf;color:#7a5a05;}
+.sv-meta{font-size:12.8px;color:var(--sv-muted);display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;}
+.sv-ops{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;}
+.sv-op{
+  display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;
+  padding:7px 13px;border-radius:999px;border:1px solid var(--sv-line);background:#fff;color:#3f4b5c;
+  transition:border-color .15s,color .15s,background .15s;
+}
+.sv-op:hover{border-color:var(--sv-navy);color:var(--sv-navy);}
+.sv-op.is-on{background:#fdf0ee;border-color:#e8735f;color:#c94a34;}
+.sv-op.is-saved{background:#fdf7e3;border-color:var(--sv-gold-2);color:#8a6507;}
+.sv-op-dot{width:7px;height:7px;border-radius:50%;background:currentColor;}
+
+.sv-focus-list{background:#fff;border:1px solid var(--sv-line);border-radius:18px;padding:8px 4px;}
+.sv-vitem{padding:16px 20px;border-bottom:1px solid #eeebe3;display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;}
+.sv-vitem:last-child{border-bottom:none;}
+.sv-vitem-idx{
+  width:36px;height:36px;border-radius:10px;display:grid;place-items:center;
+  background:var(--sv-paper-2);color:var(--sv-navy);font-weight:800;font-size:14px;
+}
+.sv-vitem h4{font-size:15.5px;margin-bottom:4px;}
+.sv-vitem p{font-size:13.6px;color:#5a6577;margin-bottom:8px;}
+@media(max-width:900px){.sv-focus-grid{grid-template-columns:1fr;}}
+
+/* ---------- 视频流：三列等高 ---------- */
+.sv-vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+.sv-vcard{
+  background:#fff;border:1px solid var(--sv-line);border-radius:16px;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s;
+}
+.sv-vcard:hover{transform:translateY(-4px);box-shadow:var(--sv-shadow);}
+.sv-vcard img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.sv-vcard-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1;}
+.sv-vcard h4{font-size:16px;margin-bottom:6px;}
+.sv-vcard p{font-size:13.4px;color:#5a6577;flex:1;}
+@media(max-width:900px){.sv-vgrid{grid-template-columns:1fr;}}
+
+/* ---------- 专题----------- */
+.sv-topics{background:var(--sv-navy);color:#e8eaf0;padding:66px 0;}
+.sv-topics .sv-h2{color:#fff;}
+.sv-topics .sv-lead{color:#b9c3d6;}
+.sv-topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:34px;}
+.sv-topic{
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);
+  border-radius:16px;padding:22px 24px;
+}
+.sv-topic-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;}
+.sv-topic h3{color:#fff;font-size:18px;margin:0;}
+.sv-status{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 10px;white-space:nowrap;}
+.sv-status--live{background:rgba(245,197,66,.18);color:var(--sv-gold);}
+.sv-status--soon{background:rgba(255,255,255,.12);color:#cfd6e4;}
+.sv-topic p{font-size:13.8px;color:#c3cbdb;margin-bottom:12px;}
+.sv-topic-list li{font-size:13.4px;color:#dfe4ee;padding:7px 0;border-top:1px dashed rgba(255,255,255,.14);display:flex;gap:9px;}
+.sv-topic-list li i{color:var(--sv-gold);font-style:normal;}
+@media(max-width:820px){.sv-topic-grid{grid-template-columns:1fr;}}
+
+/* ---------- 作者矩阵：双列简介 ---------- */
+.sv-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.sv-author{
+  background:#fff;border:1px solid var(--sv-line);border-radius:16px;padding:22px;
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:start;
+}
+.sv-avatar{
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:22px;color:#fff;letter-spacing:.02em;
+}
+.sv-author h4{font-size:16.5px;margin-bottom:2px;}
+.sv-author-role{font-size:12.6px;color:var(--sv-gold-2);font-weight:700;margin-bottom:8px;display:block;}
+.sv-author p{font-size:13.5px;color:#57616f;margin-bottom:10px;}
+.sv-author-nums{display:flex;gap:16px;font-size:12.4px;color:var(--sv-muted);flex-wrap:wrap;}
+.sv-author-nums b{color:var(--sv-navy);}
+.sv-author-more{font-size:12.8px;font-weight:700;color:var(--sv-navy);margin-top:8px;display:inline-block;border-bottom:1px solid var(--sv-gold);}
+@media(max-width:820px){.sv-authors{grid-template-columns:1fr;}}
+
+/* ---------- 数据榜单 ---------- */
+.sv-rank{background:#fff;border-top:1px solid var(--sv-line);border-bottom:1px solid var(--sv-line);}
+.sv-rank-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+.sv-rank-box{background:var(--sv-paper);border-radius:16px;padding:20px 20px 10px;border:1px solid var(--sv-line);}
+.sv-rank-box h3{font-size:16px;border-bottom:2px solid var(--sv-gold);display:inline-block;padding-bottom:4px;margin-bottom:12px;}
+.sv-rank-row{display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px dashed #d8d2c4;font-size:13.6px;}
+.sv-rank-row:last-child{border-bottom:none;}
+.sv-rank-no{width:22px;flex:none;font-weight:800;color:var(--sv-muted);font-variant-numeric:tabular-nums;}
+.sv-rank-row:nth-child(2) .sv-rank-no{color:#d4a017;}
+.sv-rank-row:nth-child(3) .sv-rank-no{color:#9a8c6b;}
+.sv-rank-row span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.sv-rank-val{color:var(--sv-navy);font-weight:700;font-size:12.6px;flex:none;}
+@media(max-width:900px){.sv-rank-cols{grid-template-columns:1fr;}}
+
+/* ---------- 评价：双列短评 ---------- */
+.sv-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.sv-comment{
+  background:#fff;border:1px solid var(--sv-line);border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:9px;
+}
+.sv-comment-head{display:flex;align-items:center;gap:10px;}
+.sv-comment-av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;font-size:14px;flex:none;}
+.sv-comment-head b{font-size:14px;color:var(--sv-navy);}
+.sv-comment-head time{font-size:11.6px;color:var(--sv-muted);margin-left:auto;}
+.sv-comment p{font-size:13.8px;color:#4b5666;margin:0;}
+.sv-stars{color:var(--sv-gold-2);font-size:13px;letter-spacing:2px;}
+@media(max-width:820px){.sv-comments{grid-template-columns:1fr;}}
+
+/* ---------- 企业动态 + 合作 ---------- */
+.sv-split{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:44px;align-items:start;}
+.sv-news li{background:#fff;border:1px solid var(--sv-line);border-radius:13px;padding:16px 18px;margin-bottom:12px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;}
+.sv-news h4{font-size:15px;margin-bottom:3px;}
+.sv-news p{font-size:13.2px;color:#5a6577;margin:0;}
+.sv-news time{font-size:12px;color:var(--sv-muted);white-space:nowrap;}
+.sv-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.sv-partner{
+  background:#fff;border:1px solid var(--sv-line);border-radius:12px;padding:16px;
+  text-align:center;font-weight:700;font-size:13.6px;color:var(--sv-navy);
+}
+.sv-partner small{display:block;font-weight:500;font-size:11.6px;color:var(--sv-muted);margin-top:3px;}
+@media(max-width:880px){.sv-split{grid-template-columns:1fr;}}
+
+/* ---------- FAQ ---------- */
+.sv-faq details{
+  background:#fff;border:1px solid var(--sv-line);border-radius:12px;padding:0 18px;margin-bottom:10px;
+}
+.sv-faq summary{
+  cursor:pointer;padding:15px 0;font-weight:700;font-size:15px;color:var(--sv-navy);
+  list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.sv-faq summary::-webkit-details-marker{display:none;}
+.sv-faq summary::after{content:"+";font-size:19px;color:var(--sv-gold-2);font-weight:800;line-height:1;}
+.sv-faq details[open] summary::after{content:"–";}
+.sv-faq details p{font-size:13.8px;color:#4e5a6b;padding-bottom:16px;margin:0;}
+
+/* ---------- 页脚 ---------- */
+.sv-footer{background:var(--sv-ink);color:#aeb8c8;padding:56px 0 28px;margin-top:0;}
+.sv-footer-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:34px;}
+.sv-footer h5{color:#fff;font-size:14px;margin:0 0 14px;letter-spacing:.04em;}
+.sv-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px;color:#fff;font-weight:800;font-size:17px;}
+.sv-footer p{font-size:13.2px;line-height:1.75;color:#8f9aab;}
+.sv-footer ul li{font-size:13.2px;padding:5px 0;color:#98a3b4;}
+.sv-footer ul li:hover{color:var(--sv-gold);}
+.sv-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);margin-top:34px;padding-top:20px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.4px;color:#7f8a9c;
+}
+@media(max-width:900px){.sv-footer-grid{grid-template-columns:1fr 1fr;}}
+
+/* ---------- 回到顶部 ---------- */
+.sv-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:var(--sv-navy);color:#fff;display:grid;place-items:center;
+  box-shadow:0 12px 26px rgba(22,35,61,.34);z-index:70;
+  opacity:0;visibility:hidden;transform:translateY(10px);transition:.22s;
+}
+.sv-top.is-on{opacity:1;visibility:visible;transform:none;}
+
+/* ---------- Toast & 模态 ---------- */
+.sv-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:var(--sv-ink);color:#fff;font-size:13.5px;font-weight:600;
+  padding:11px 20px;border-radius:999px;box-shadow:0 14px 34px rgba(0,0,0,.3);
+  opacity:0;visibility:hidden;transition:.25s;z-index:90;max-width:86vw;text-align:center;
+}
+.sv-toast.is-on{opacity:1;visibility:visible;transform:translate(-50%,0);}
+.sv-modal{
+  position:fixed;inset:0;background:rgba(13,21,38,.62);z-index:100;
+  display:none;align-items:center;justify-content:center;padding:22px;
+}
+.sv-modal.is-on{display:flex;}
+.sv-modal-panel{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;padding:26px 26px 22px;
+  box-shadow:0 30px 70px rgba(0,0,0,.34);max-height:86vh;overflow:auto;
+}
+.sv-modal-panel h3{font-size:19px;margin-bottom:10px;}
+.sv-modal-panel p{font-size:14px;color:#4e5a6b;}
+.sv-modal-close{
+  float:right;width:32px;height:32px;border-radius:50%;background:var(--sv-paper);
+  display:grid;place-items:center;font-size:17px;color:var(--sv-navy);font-weight:700;
+}
+.sv-field{margin-bottom:12px;}
+.sv-field label{display:block;font-size:12.8px;font-weight:700;color:var(--sv-navy);margin-bottom:5px;}
+.sv-field input,.sv-field textarea{
+  width:100%;border:1px solid var(--sv-line);border-radius:10px;padding:10px 12px;
+  font-size:14px;font-family:inherit;outline:none;background:var(--sv-paper);
+}
+.sv-field textarea{min-height:88px;resize:vertical;}
+.sv-field input:focus,.sv-field textarea:focus{border-color:var(--sv-navy-2);}
+.sv-share-row{display:flex;gap:10px;flex-wrap:wrap;}
+.sv-share-row button{
+  flex:1;min-width:96px;border:1px solid var(--sv-line);border-radius:10px;padding:11px 8px;
+  font-size:13.4px;font-weight:700;color:var(--sv-navy);background:var(--sv-paper);
+}
+.sv-share-row button:hover{border-color:var(--sv-navy);}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="sv-topbar">
+  <div class="sv-notice">
+    <div class="sv-wrap">
+      <span class="sv-notice-tag">官方发布</span>
+      <div class="sv-notice-track" aria-label="最新更新">
+        <span>「审问tk丨vk挠脚心」第四季创作企划开放投稿 · 12 月城市影像巡回展报名中</span>
+        <span>新增 38 部高清正版短片上线 · 创作者扶持计划第二期启动</span>
+        <span>「审问tk丨vk挠脚心」年度创作者投票通道已开启</span>
+        <span>「审问tk丨vk挠脚心」第四季创作企划开放投稿 · 12 月城市影像巡回展报名中</span>
+        <span>新增 38 部高清正版短片上线 · 创作者扶持计划第二期启动</span>
+        <span>「审问tk丨vk挠脚心」年度创作者投票通道已开启</span>
+      </div>
+    </div>
+  </div>
+  <header class="sv-header">
+    <div class="sv-wrap sv-header-inner">
+      <a class="sv-brand" href="#sv-hero">
+        <span class="sv-brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z" fill="#f5c542"/></svg>
+        </span>
+        <span>审问tk丨vk挠脚心<small>OFFICIAL VIDEO</small></span>
+      </a>
+      <nav class="sv-nav" id="svNav" aria-label="主导航">
+        <a href="#sv-parse">品牌解析</a>
+        <a href="#sv-focus">焦点内容</a>
+        <a href="#sv-videos">视频社区</a>
+        <a href="#sv-topics">专题企划</a>
+        <a href="#sv-authors">创作者</a>
+        <a href="#sv-rank">榜单</a>
+        <a href="#sv-news">企业动态</a>
+        <a href="#sv-faq">帮助</a>
+      </nav>
+      <form class="sv-search" id="svSearch" role="search" onsubmit="return false;">
+        <svg class="sv-search-ico" viewBox="0 0 24 24" fill="none" stroke="#25303f" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input type="search" id="svSearchInput" placeholder="搜索视频 / 创作者 / 专题" aria-label="站内搜索" autocomplete="off">
+        <div class="sv-search-hint" id="svSearchHint" role="status"></div>
+      </form>
+      <button class="sv-burger" id="svBurger" aria-label="展开导航" aria-expanded="false" aria-controls="svNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<!-- S2 品牌首屏 -->
+<section class="sv-hero" id="sv-hero">
+  <div class="sv-wrap sv-hero-grid">
+    <div>
+      <span class="sv-hero-tag"><i></i>官方网站 · 企业级视频品牌平台</span>
+      <h1>审问tk丨vk挠脚心</h1>
+      <p class="sv-hero-desc">
+        作为持续运营的原创影像品牌，我们以<strong>审问tk丨vk挠脚心</strong>为核心内容 IP，深耕人物访谈、城市探索与生活记录垂直领域，
+        为创作者与企业搭建高清、正版、值得信赖的视频内容生态。官网汇聚精品内容、品牌故事与企业动态，
+        让每一次真实表达都被看见。
+      </p>
+      <div class="sv-hero-actions">
+        <a class="sv-btn sv-btn-primary" href="#sv-videos">浏览精品内容</a>
+        <a class="sv-btn sv-btn-gold" href="#sv-topics">查看专题企划</a>
+        <a class="sv-btn sv-btn-ghost" href="#sv-authors">认识创作者</a>
+      </div>
+      <div class="sv-stats">
+        <div class="sv-stat"><b>1,860+</b><span>原创高清视频</span></div>
+        <div class="sv-stat"><b>246万</b><span>注册社区用户</span></div>
+        <div class="sv-stat"><b>312位</b><span>签约创作者</span></div>
+      </div>
+    </div>
+    <div class="sv-hero-visual">
+      <div class="sv-hero-frame">
+        <img alt="审问tk丨vk挠脚心品牌主视觉：夜间城市天台上人物剪影与摄影机灯光" width="880" height="605"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 880 605'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231b2a4a'/%3E%3Cstop offset='55%25' stop-color='%232c4675'/%3E%3Cstop offset='100%25' stop-color='%23b96a4a'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f5c542'/%3E%3Cstop offset='1' stop-color='%23e8735f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='880' height='605' fill='url(%23sky)'/%3E%3Ccircle cx='690' cy='120' r='58' fill='%23f5c542' opacity='.82'/%3E%3Ccircle cx='690' cy='120' r='92' fill='%23f5c542' opacity='.14'/%3E%3Cg fill='%23121b2e'%3E%3Crect x='0' y='330' width='96' height='275'/%3E%3Crect x='110' y='272' width='78' height='333'/%3E%3Crect x='204' y='362' width='112' height='243'/%3E%3Crect x='332' y='300' width='70' height='305'/%3E%3Crect x='700' y='350' width='180' height='255'/%3E%3Crect x='596' y='386' width='88' height='219'/%3E%3C/g%3E%3Cg fill='%23f5c542' opacity='.5'%3E%3Crect x='126' y='300' width='10' height='14'/%3E%3Crect x='150' y='300' width='10' height='14'/%3E%3Crect x='126' y='330' width='10' height='14'/%3E%3Crect x='720' y='382' width='12' height='16'/%3E%3Crect x='760' y='382' width='12' height='16'/%3E%3Crect x='800' y='382' width='12' height='16'/%3E%3Crect x='720' y='420' width='12' height='16'/%3E%3C/g%3E%3Crect x='0' y='470' width='880' height='135' fill='%230d1526'/%3E%3Cg%3E%3Ccircle cx='430' cy='352' r='27' fill='%23111a2c'/%3E%3Cpath d='M430 380c38 0 62 26 66 62H364c4-36 28-62 66-62z' fill='%23111a2c'/%3E%3Ccircle cx='528' cy='372' r='22' fill='%23182136'/%3E%3Cpath d='M528 396c32 0 52 22 56 54h-112c4-32 24-54 56-54z' fill='%23182136'/%3E%3C/g%3E%3Cg%3E%3Crect x='466' y='404' width='72' height='46' rx='8' fill='%232b3450'/%3E%3Ccircle cx='502' cy='427' r='13' fill='url(%23glow)'/%3E%3Crect x='546' y='414' width='26' height='16' rx='4' fill='%232b3450'/%3E%3C/g%3E%3Cpath d='M420 448l16 -26 14 26z' fill='%23f5c542' opacity='.75'/%3E%3Ctext x='60' y='556' font-family='sans-serif' font-size='27' font-weight='700' fill='%23f6f4ef'%3E审问tk丨vk挠脚心 · 城市影像计划%3C/text%3E%3Ctext x='60' y='588' font-family='sans-serif' font-size='17' fill='%23b9c3d6'%3EOriginal Series / Season 04%3C/text%3E%3C/svg%3E">
+      </div>
+      <div class="sv-hero-float">
+        <b>本季主推</b>
+        <span>夜行记录 · 十二位普通人的城市夜晚，正在连载更新</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- M15 关键词解析长文 -->
+<section class="sv-section sv-parse" id="sv-parse">
+  <div class="sv-wrap">
+    <span class="sv-eyebrow">Brand Deep Dive</span>
+    <h2 class="sv-h2">关于「审问tk丨vk挠脚心」：一个正在生长的原创影像品牌</h2>
+    <div class="sv-parse-grid">
+      <div class="sv-parse-body">
+        <p>
+          「审问tk丨vk挠脚心」诞生于一群影像工作者的客厅会议。最初只有两台二手摄影机和一间 18 平方米的剪辑室，
+          团队想做的事情非常朴素：用镜头认真记录那些被日常忽略的细节。<strong>审问tk丨vk挠脚心</strong>这个名字本身就带着一点自我审视的意味——
+          “审问”是对表达诚意的追问，“挠脚心”则是对观看者情绪的轻轻拨动。官方网站记录着这个品牌从 0 到 1 的全过程，
+          也把它今天的样子完整地摊开给创作者和观众。
+        </p>
+        <h3>品牌的诞生与定位：从一间剪辑室开始</h3>
+        <p>
+          品牌第一支短片拍摄于一个雨天的旧货市场，全长 7 分 42 秒，没有脚本、没有灯光，只有一段关于旧物与记忆的对话。
+          这支片子后来成为官网“起点”专栏的固定入口。经过数年持续运营，团队确立了三条内容主线：一是人物访谈，二是城市探索，
+          三是生活方式的日常记录。三条主线并不互相排斥，它们共享同一种工作方法——先花时间建立信任，再打开摄像机。
+          作为垂直领域的内容品牌，我们并不追求选题的数量，而更关心每一条片子是否留下了真实的细节：一次迟疑的停顿、
+          一句没有说完的话、一段被保留的呼吸声。
+        </p>
+        <h3>内容生产方式：先建立信任，再打开机器</h3>
+        <p>
+          在「审问tk丨vk挠脚心」的工作流里，拍摄前期的沟通往往占掉整个项目一半的时间。编导会与被访者见面两到三次，
+          不拿机器、不做提纲式提问，只做长时间的闲聊。这个看似低效的环节，恰恰是品牌口碑的来源。
+          我们的创作者大多同时担任导演、摄影与剪辑，一人完成一条片子的完整链路，因此每一支视频都带着作者本人的判断。
+          官网上的创作者档案不只展示粉丝数，也展示他们的工作方法、常用设备与代表性拍摄笔记，方便同好之间互相学习。
+          对于企业合作方，我们提供从选题策划、脚本打磨、现场拍摄到后期剪辑与分发的完整方案，并承诺全部内容为原创正版。
+        </p>
+        <h3>社区与内容生态：把观看变成参与</h3>
+        <p>
+          视频品牌的生命力不止在片子里，也在评论区与投稿入口之间。「审问tk丨vk挠脚心」官网设有开放的投稿通道，
+          每季度会从社区投稿中挑选 8 到 12 条纳入“新人视角”企划，为新人提供拍摄补贴与剪辑指导。
+          我们相信内容生态的多元与包容，是品牌影响力的真正基础：一位退休教师拍摄的菜市场系列，一位大学生记录的通勤夜班车，
+          都能在同一序列里被认真对待。为此官网设置了热度榜、新人榜与口碑榜三张榜单，用不同的维度而不是单一流量来评价内容。
+          同时，我们坚持用户至上的内容审核原则，所有上传内容均需经过人工复核，确保社区氛围温暖、真实、可持续。
+        </p>
+        <h3>技术标准与服务承诺：高清、正版与持续运营</h3>
+        <p>
+          在技术侧，官网所有视频均以高清标准上线，并保留原始素材的调色版本，方便合作方二次使用。
+          播放器支持多档清晰度切换与章节标记，长访谈类内容可跳转到指定话题。我们为品牌客户提供内容授权与二次剪辑授权两种合作方式，
+          所有授权范围在合同中清晰标注，避免后续争议。数据侧，官网向创作者开放基础播放、完播与互动数据看板，
+          帮助其判断内容节奏是否需要调整。作为一个持续运营的企业级平台，我们每年发布一次品牌透明度报告，
+          公开内容审核数量、投稿采纳率与创作者分成总额，把“值得信赖”四个字落到可以核对的事实上。
+        </p>
+        <h3>未来方向：让好内容被看见更久</h3>
+        <p>
+          接下来一年，「审问tk丨vk挠脚心」将重点做三件事：扩展城市影像巡回展的线下触点，把线上内容带到真实空间；
+          推出面向青年创作者的长线培养计划，提供从选题到分发的完整陪伴；以及搭建更细的内容分类体系，
+          让观众能按主题、按城市、按创作方法检索视频。我们希望这个官网不只是一个内容陈列柜，而是一个可以被反复打开的档案库——
+          记录品牌故事，也记录每一个愿意认真表达的人。
+        </p>
+      </div>
+      <aside class="sv-parse-side">
+        <div class="sv-side-card">
+          <h4>品牌关键词速览</h4>
+          <ul>
+            <li><i>01</i>原创正版 · 全部内容自主拍摄</li>
+            <li><i>02</i>高清画质 · 保留完整调色版本</li>
+            <li><i>03</i>垂直领域 · 访谈与城市记录</li>
+            <li><i>04</i>开放投稿 · 季度新人扶持</li>
+            <li><i>05</i>三张榜单 · 多维评价体系</li>
+          </ul>
+        </div>
+        <div class="sv-side-card">
+          <h4>内容生态数据</h4>
+          <ul>
+            <li><i>·</i>累计原创视频 1,860+ 条</li>
+            <li><i>·</i>社区注册用户 246 万</li>
+            <li><i>·</i>签约创作者 312 位</li>
+            <li><i>·</i>季度投稿采纳率 17%</li>
+            <li><i>·</i>内容审核人工复核 100%</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- S3 焦点内容：一幅重点大图 + 文字列表 -->
+<section class="sv-section" id="sv-focus">
+  <div class="sv-wrap">
+    <span class="sv-eyebrow">Focus</span>
+    <h2 class="sv-h2">焦点内容 · 本期重点推荐</h2>
+    <p class="sv-lead">由「审问tk丨vk挠脚心」编辑部与社区共同选出的四组内容，涵盖人物访谈、城市探索与创作幕后。</p>
+    <div class="sv-focus-grid" style="margin-top:30px;">
+      <article class="sv-focus-main">
+        <div class="sv-focus-cover">
+          <img alt="焦点视频封面：深夜面馆里两位老人对坐交谈，暖光灯下的访谈现场" width="800" height="450"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='warm' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233b2a1e'/%3E%3Cstop offset='1' stop-color='%236b4325'/%3E%3C/linearGradient%3E%3CradialGradient id='lamp' cx='50%25' cy='20%25' r='60%25'%3E%3Cstop offset='0' stop-color='%23ffcf72' stop-opacity='.95'/%3E%3Cstop offset='1' stop-color='%23ffcf72' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23warm)'/%3E%3Crect width='800' height='450' fill='url(%23lamp)'/%3E%3Cg fill='%231f150f'%3E%3Crect x='0' y='0' width='800' height='46'/%3E%3Crect x='60' y='46' width='18' height='180'/%3E%3Cpath d='M40 46h120l-14 44H54z' fill='%23352a20'/%3E%3C/g%3E%3Ccircle cx='400' cy='150' r='16' fill='%23ffd98a'/%3E%3Cg%3E%3Cellipse cx='290' cy='300' rx='58' ry='72' fill='%23141d2c'/%3E%3Ccircle cx='290' cy='222' r='34' fill='%23141d2c'/%3E%3Cellipse cx='512' cy='306' rx='54' ry='68' fill='%231b2536'/%3E%3Ccircle cx='512' cy='232' r='31' fill='%231b2536'/%3E%3C/g%3E%3Crect x='200' y='360' width='400' height='14' rx='7' fill='%238a5c34'/%3E%3Cg fill='%23e2a95e' opacity='.85'%3E%3Crect x='300' y='336' width='26' height='24' rx='5'/%3E%3Crect x='470' y='336' width='26' height='24' rx='5'/%3E%3C/g%3E%3Ctext x='40' y='420' font-family='sans-serif' font-size='16' fill='%23f0d7b6'%3E深夜面馆 · 访谈现场%3C/text%3E%3C/svg%3E">
+          <span class="sv-focus-badge">本期焦点</span>
+          <span class="sv-focus-play"><span></span></span>
+        </div>
+        <div class="sv-focus-body">
+          <h3>《深夜面馆》第 7 期：两位七十岁老人聊他们的四十年夜班</h3>
+          <p>一碗面、一张桌子、一小时的对话。「审问tk丨vk挠脚心」跟拍这家开了 41 年的深夜面馆整整三周，
+            记录下夜班司机、清洁工与守店老人之间流动的日常。这支 26 分钟的访谈没有配乐，只有锅气和谈话声。</p>
+          <div class="sv-tags">
+            <span class="sv-tag sv-tag--gold">人物访谈</span>
+            <span class="sv-tag">城市探索</span>
+            <span class="sv-tag">治愈影像</span>
+          </div>
+          <div class="sv-meta">
+            <span>创作者：老巷镜头</span>
+            <span>播放 42.6 万</span>
+            <span>点赞 3.8 万</span>
+            <span>收藏 1.9 万</span>
+          </div>
+          <div class="sv-ops">
+            <button class="sv-op" data-like><span class="sv-op-dot"></span>点赞 <b data-like-count>38621</b></button>
+            <button class="sv-op" data-save>收藏</button>
+            <button class="sv-op" data-share>分享</button>
+            <button class="sv-op" data-comment>评论</button>
+          </div>
+        </div>
+      </article>
+      <div class="sv-focus-list">
+        <article class="sv-vitem">
+          <span class="sv-vitem-idx">02</span>
+          <div>
+            <h4>《凌晨四点的早餐铺》创作幕后</h4>
+            <p>三脚架被蒸汽糊住了五次，导演聊聊在 12 平方米厨房里如何完成一次稳定拍摄。</p>
+            <div class="sv-tags"><span class="sv-tag">创作幕后</span><span class="sv-tag">实用技巧</span></div>
+            <div class="sv-meta"><span>播放 18.2 万</span><span>创作者：南岸阿禾</span></div>
+          </div>
+        </article>
+        <article class="sv-vitem">
+          <span class="sv-vitem-idx">03</span>
+          <div>
+            <h4>《旧货市场三十年》城市影像特别篇</h4>
+            <p>跟着摊主老周走一圈市场，从一枚旧纽扣讲到一整条街的变迁，全程一镜跟拍。</p>
+            <div class="sv-tags"><span class="sv-tag">城市探索</span><span class="sv-tag">在地文化</span></div>
+            <div class="sv-meta"><span>播放 27.4 万</span><span>创作者：拾光小队</span></div>
+          </div>
+        </article>
+        <article class="sv-vitem">
+          <span class="sv-vitem-idx">04</span>
+          <div>
+            <h4>《一个人怎么拍好一段对话》剪辑思路拆解</h4>
+            <p>从素材筛选到呼吸点保留，完整公开「审问tk丨vk挠脚心」访谈片的剪辑时间线。</p>
+            <div class="sv-tags"><span class="sv-tag">教程干货</span><span class="sv-tag">深度测评</span></div>
+            <div class="sv-meta"><span>播放 12.9 万</span><span>创作者：剪辑室的灯</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S3 视频社区：三列等高卡片 -->
+<section class="sv-section sv-section--tight" id="sv-videos">
+  <div class="sv-wrap">
+    <span class="sv-eyebrow">Video Community</span>
+    <h2 class="sv-h2">视频社区 · 每周精选上新</h2>
+    <p class="sv-lead">高清正版、持续更新的精品内容。「审问tk丨vk挠脚心」社区每周上新，欢迎收藏后慢慢看。</p>
+    <div class="sv-vgrid" style="margin-top:28px;">
+      <article class="sv-vcard">
+        <img alt="视频封面：菜市场清晨的摊位与挑菜的手，绿色调市井影像" width="560" height="315"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 315'%3E%3Crect width='560' height='315' fill='%23dfe6d6'/%3E%3Crect y='0' width='560' height='120' fill='%23c9d8bc'/%3E%3Cg fill='%238fae74'%3E%3Crect x='30' y='150' width='120' height='14' rx='7'/%3E%3Crect x='30' y='176' width='120' height='14' rx='7'/%3E%3Crect x='30' y='202' width='120' height='14' rx='7'/%3E%3C/g%3E%3Cg fill='%23c1543f'%3E%3Ccircle cx='210' cy='170' r='17'/%3E%3Ccircle cx='252' cy='186' r='13'/%3E%3Ccircle cx='288' cy='166' r='15'/%3E%3C/g%3E%3Cg fill='%236b8f4e'%3E%3Cellipse cx='360' cy='176' rx='20' ry='13'/%3E%3Cellipse cx='400' cy='190' rx='18' ry='12'/%3E%3C/g%3E%3Crect x='0' y='230' width='560' height='85' fill='%23b9a98d'/%3E%3Ccircle cx='470' cy='96' r='34' fill='%23f2d06b'/%3E%3Ctext x='26' y='285' font-family='sans-serif' font-size='17' fill='%233a4a34'%3E清晨菜市场 · 一日观察%3C/text%3E%3C/svg%3E">
+        <div class="sv-vcard-body">
+          <h4>清晨六点的菜市场，三十年不变的吆喝声</h4>
+          <p>跟着买菜的人走一圈，听摊主讲讲凌晨三点开始的忙碌，一支安静的城市日常纪录片。</p>
+          <div class="sv-tags"><span class="sv-tag">日常记录</span><span class="sv-tag">在地文化</span></div>
+          <div class="sv-meta"><span>播放 9.7 万</span><span>创作者：南岸阿禾</span></div>
+          <div class="sv-ops">
+            <button class="sv-op" data-like><span class="sv-op-dot"></span>赞 <b data-like-count>8210</b></button>
+            <button class="sv-op" data-save>收藏</button>
+          </div>
+        </div>
+      </article>
+      <article class="sv-vcard">
+        <img alt="视频封面：手作陶艺拉坯的手部特写与旋转泥坯，温暖陶土色" width="560" height="315"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 315'%3E%3Crect width='560' height='315' fill='%23f0e3d0'/%3E%3Ccirccx='0' cy='0' r='0' fill='none'/%3E%3Ccircle cx='280' cy='160' r='104' fill='%23d9b48a'/%3E%3Ccircle cx='280' cy='160' r='76' fill='%23c1905f'/%3E%3Ccircle cx='280' cy='160' r='46' fill='%23a87444'/%3E%3Cg fill='%23e8cdb0'%3E%3Cpath d='M150 300c8-52 42-84 92-92l14 44c-38 8-58 30-62 48z'/%3E%3Cpath d='M410 300c-8-52-42-84-92-92l-14 44c38 8 58 30 62 48z'/%3E%3C/g%3E%3Crect x='0' y='266' width='560' height='49' fill='%23c9a980'/%3E%3Ctext x='26' y='294' font-family='sans-serif' font-size='16' fill='%23533b21'%3E手作拉坯 · 器物成形%3C/text%3E%3C/svg%3E">
+        <div class="sv-vcard-body">
+          <h4>手作拉坯的第一百次失败，与第一百零一次成功</h4>
+          <p>陶艺创作者真实记录从揉泥到成形的全过程，把失败镜头全部保留，讲透手感与耐心。</p>
+          <div class="sv-tags"><span class="sv-tag">手作DIY</span><span class="sv-tag">经验分享</span></div>
+          <div class="sv-meta"><span>播放 14.3 万</span><span>创作者：泥与手</span></div>
+          <div class="sv-ops">
+            <button class="sv-op" data-like><span class="sv-op-dot"></span>赞 <b data-like-count>13402</b></button>
+            <button class="sv-op" data-save>收藏</button>
+          </div>
+        </div>
+      </article>
+      <article class="sv-vcard">
+        <img alt="视频封面：夜间骑行队伍的车灯轨迹穿过桥面，深蓝都市夜景" width="560" height="315"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 315'%3E%3Crect width='560' height='315' fill='%230f1c33'/%3E%3Cg stroke='%23f5c542' stroke-width='6' opacity='.85' fill='none'%3E%3Cpath d='M-10 240c120-40 200 20 300-16s180 24 290-20'/%3E%3Cpath d='M-10 268c120-40 200 20 300-16s180 24 290-20' opacity='.55'/%3E%3C/g%3E%3Cg fill='%231d2c4a'%3E%3Crect x='40' y='150' width='70' height='150'/%3E%3Crect x='140' y='110' width='54' height='190'/%3E%3Crect x='400' y='128' width='66' height='172'/%3E%3Crect x='486' y='162' width='50' height='138'/%3E%3C/g%3E%3Cg fill='%23ffe08a' opacity='.8'%3E%3Ccircle cx='230' cy='200' r='5'/%3E%3Ccircle cx='262' cy='212' r='4'/%3E%3Ccircle cx='296' cy='196' r='5'/%3E%3Ccircle cx='330' cy='210' r='4'/%3E%3C/g%3E%3Ccircle cx='466' cy='72' r='26' fill='%23dfe8f5' opacity='.9'/%3E%3Ctext x='26' y='296' font-family='sans-serif' font-size='16' fill='%23cfdcee'%3E夜骑 · 桥上的十二公里%3C/text%3E%3C/svg%3E">
+        <div class="sv-vcard-body">
+          <h4>夜骑十二公里：给下班后的人一条城市路线</h4>
+          <p>从江边到旧桥，标注三个补给点和两处最佳观景点，附完整路书与拍摄机位建议。</p>
+          <div class="sv-tags"><span class="sv-tag">户外活动</span><span class="sv-tag">攻略</span></div>
+          <div class="sv-meta"><span>播放 11.5 万</span><span>创作者：周末轨道</span></div>
+          <div class="sv-ops">
+            <button class="sv-op" data-like><span class="sv-op-dot"></span>赞 <b data-like-count>9876</b></button>
+            <button class="sv-op" data-save>收藏</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S4 专题企划 -->
+<section class="sv-topics" id="sv-topics">
+  <div class="sv-wrap">
+    <span class="sv-eyebrow" style="color:#f5c542;">Special Projects</span>
+    <h2 class="sv-h2">专题企划 · 正在进行的四组内容</h2>
+    <p class="sv-lead">「审问tk丨vk挠脚心」每年推出四组专题企划，由编辑部发起、社区共同参与，持续更新。</p>
+    <div class="sv-topic-grid">
+      <article class="sv-topic">
+        <div class="sv-topic-top">
+          <h3>城市夜行档案</h3>
+          <span class="sv-status sv-status--live">更新中</span>
+        </div>
+        <p>十二个城市的夜晚切片，记录夜班工作者、深夜店铺与凌晨的街道。</p>
+        <ul class="sv-topic-list">
+          <li><i>01</i>深夜面馆：四十年夜班的对话</li>
+          <li><i>02</i>凌晨的环卫车与一顿盒饭</li>
+          <li><i>03</i>便利店第六年：一位店长的夜班笔记</li>
+        </ul>
+      </article>
+      <article class="sv-topic">
+        <div class="sv-topic-top">
+          <h3>一只手的技术史</h3>
+          <span class="sv-status sv-status--live">更新中</span>
+        </div>
+        <p>聚焦手艺人的手部特写系列，用镜头拆解手作背后的经验与耐心。</p>
+        <ul class="sv-topic-list">
+          <li><i>01</i>拉坯：泥料与手掌的百年磨合</li>
+          <li><i>02</i>补瓷：一枚钉子的三十次敲打</li>
+          <li><i>03</i>扎灯：竹篾在指间弯成弧线</li>
+        </ul>
+      </article>
+      <article class="sv-topic">
+        <div class="sv-topic-top">
+          <h3>新人视角扶持计划</h3>
+          <span class="sv-status sv-status--soon">征集中 · 12 月截止</span>
+        </div>
+        <p>面向首次投稿的创作者，提供拍摄补贴、剪辑指导与首页推荐位。</p>
+        <ul class="sv-topic-list">
+          <li><i>01</i>投稿要求：3–15 分钟原创短片</li>
+          <li><i>02</i>入选权益：设备补贴与署名推荐</li>
+          <li><i>03</i>开放报名：官网投稿入口填写表单</li>
+        </ul>
+      </article>
+      <article class="sv-topic">
+        <div class="sv-topic-top">
+          <h3>对话的边界</h3>
+          <span class="sv-status sv-status--live">连载第 3 季</span>
+        </div>
+        <p>关于访谈方法的系列内容，创作者分享如何提问、如何沉默、如何保留真实。</p>
+        <ul class="sv-topic-list">
+          <li><i>01</i>为什么第一句话不该是问题</li>
+          <li><i>02</i>剪辑时如何处理三秒的停顿</li>
+          <li><i>03</i>被访者说“别拍了”之后</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S5 作者矩阵：双列简介 -->
+<section class="sv-section" id="sv-authors">
+  <div class="sv-wrap">
+    <span class="sv-eyebrow">Creators</span>
+    <h2 class="sv-h2">创作者矩阵 · 与我们同行的六位作者</h2>
+    <p class="sv-lead">「审问tk丨vk挠脚心」的创作者来自不同城市与职业，他们的共同点是愿意为一支片子花时间。</p>
+    <div class="sv-authors" style="margin-top:28px;">
+      <article class="sv-author">
+        <span class="sv-avatar" style="background:linear-gradient(140deg,#1f3357,#3f6cb0);">老</span>
+        <div>
+          <h4>老巷镜头</h4>
+          <span class="sv-author-role">人物访谈 · 城市探索</span>
+          <p>入行十四年，做过报纸摄影记者，习惯先和人聊上两小时再开机。擅长在狭小空间里完成双人对话的拍摄，最满意的作品是《深夜面馆》系列。主张“少一点设计，多一点等待”。</p>
+          <div class="sv-author-nums"><span>作品 <b>128</b></span><span>粉丝 <b>36.4万</b></span></div>
+          <button class="sv-author-more" data-author="老巷镜头">查看作者档案 →</button>
+        </div>
+      </article>
+      <article class="sv-author">
+        <span class="sv-avatar" style="background:linear-gradient(140deg,#3f7a5c,#7bb894);">南</span>
+        <div>
+          <h4>南岸阿禾</h4>
+          <span class="sv-author-role">日常记录 · 美食烹饪</span>
+          <p>原本是厨师，后来把厨房搬进了镜头。专注记录清晨市场与家常灶台，视频里常常只有切菜声和油锅声。她相信最普通的饭菜里藏着最稳的情绪，坚持每周更新一条。</p>
+          <div class="sv-author-nums"><span>作品 <b>91</b></span><span>粉丝 <b>28.7万</b></span></div>
+          <button class="sv-author-more" data-author="南岸阿禾">查看作者档案 →</button>
+        </div>
+      </article>
+      <article class="sv-author">
+        <span class="sv-avatar" style="background:linear-gradient(140deg,#8a5c34,#c99659);">泥</span>
+        <div>
+          <h4>泥与手</h4>
+          <span class="sv-author-role">手作DIY · 艺术美学</span>
+          <p>陶艺工作室主理人，也拍陶艺。作品几乎全部使用定焦镜头和自然光，偏爱保留失败镜头。他认为过程比成品更值得被记录，评论区常被称为“最耐心的手作频道”。</p>
+          <div class="sv-author-nums"><span>作品 <b>76</b></span><span>粉丝 <b>21.3万</b></span></div>
+          <button class="sv-author-more" data-author="泥与手">查看作者档案 →</button>
+        </div>
+      </article>
+      <article class="sv-author">
+        <span class="sv-avatar" style="background:linear-gradient(140deg,#4a3f7a,#8778c9);">剪</span>
+        <div>
+          <h4>剪辑室的灯</h4>
+          <span class="sv-author-role">教程干货 · 创作幕后</span>
+          <p>后期出身，擅长用最简单的语言拆解剪辑逻辑。每期视频只讲一个动作，从时间线结构到呼吸点保留，全部公开原始工程结构。被社区称为“新人的第一堂剪辑课”。</p>
+          <div class="sv-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>19.8万</b></span></div>
+          <button class="sv-author-more" data-author="剪辑室的灯">查看作者档案 →</button>
+        </div>
+      </article>
+      <article class="sv-author">
+        <span class="sv-avatar" style="background:linear-gradient(140deg,#2d6b73,#63b3bd);">周</span>
+        <div>
+          <h4>周末轨道</h4>
+          <span class="sv-author-role">户外活动 · 旅行见闻</span>
+          <p>白天上班，周末骑车拍片子。擅长用低成本设备完成稳定跟拍，路线视频里会附上补给点与拍摄机位。他的目标是把城市周边走成一张可以分享的地图。</p>
+          <div class="sv-author-nums"><span>作品 <b>58</b></span><span>粉丝 <b>16.2万</b></span></div>
+          <button class="sv-author-more" data-author="周末轨道">查看作者档案 →</button>
+        </div>
+      </article>
+      <article class="sv-author">
+        <span class="sv-avatar" style="background:linear-gradient(140deg,#8a3f4a,#d17b87);">拾</span>
+        <div>
+          <h4>拾光小队</h4>
+          <span class="sv-author-role">在地文化 · 人物访谈</span>
+          <p>三人小组，一位导演、一位摄影、一位录音。专注旧货市场、老街与即将消失的手艺，坚持每支片子做完整田野笔记，并在官网公开拍摄手记供后来者参考。</p>
+          <div class="sv-author-nums"><span>作品 <b>47</b></span><span>粉丝 <b>24.1万</b></span></div>
+          <button class="sv-author-more" data-author="拾光小队">查看作者档案 →</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S6 数据榜单 -->
+<section class="sv-section sv-rank" id="sv-rank">
+  <div class="sv-wrap">
+    <span class="sv-eyebrow">Ranking</span>
+    <h2 class="sv-h2">内容榜单 · 用不同维度看「审问tk丨vk挠脚心」</h2>
+    <p class="sv-lead">热度不是唯一标准。我们同时保留新人榜与口碑榜，让不同类型的作品都有被看见的机会。</p>
+    <div class="sv-rank-cols" style="margin-top:28px;">
+      <div class="sv-rank-box">
+        <h3>本周热度榜</h3>
+        <div class="sv-rank-row"><span class="sv-rank-no">1</span><span>《深夜面馆》第 7 期</span><b class="sv-rank-val">42.6万</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">2</span><span>《旧货市场三十年》</span><b class="sv-rank-val">27.4万</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">3</span><span>《凌晨四点的早餐铺》</span><b class="sv-rank-val">18.2万</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">4</span><span>《手作拉坯的第一百次》</span><b class="sv-rank-val">14.3万</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">5</span><span>《一个人怎么拍好对话》</span><b class="sv-rank-val">12.9万</b></div>
+      </div>
+      <div class="sv-rank-box">
+        <h3>新人榜</h3>
+        <div class="sv-rank-row"><span class="sv-rank-no">1</span><span>夜班公交的最后一排</span><b class="sv-rank-val">+312%</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">2</span><span>楼下修鞋摊的上午</span><b class="sv-rank-val">+263%</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">3</span><span>外婆的腌菜坛子</span><b class="sv-rank-val">+221%</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">4</span><span>天台上的第一场露天放映</span><b class="sv-rank-val">+188%</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">5</span><span>雨天便利店观察笔记</span><b class="sv-rank-val">+154%</b></div>
+      </div>
+      <div class="sv-rank-box">
+        <h3>口碑榜</h3>
+        <div class="sv-rank-row"><span class="sv-rank-no">1</span><span>《对话的边界》第 3 季</span><b class="sv-rank-val">9.6 分</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">2</span><span>《补瓷：三十次敲打》</span><b class="sv-rank-val">9.5 分</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">3</span><span>《夜骑十二公里》</span><b class="sv-rank-val">9.3 分</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">4</span><span>《清晨菜市场》</span><b class="sv-rank-val">9.1 分</b></div>
+        <div class="sv-rank-row"><span class="sv-rank-no">5</span><span>《扎灯：竹篾成弧》</span><b class="sv-rank-val">8.9 分</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S6 用户评价：双列短评 -->
+<section class="sv-section" id="sv-comments">
+  <div class="sv-wrap">
+    <span class="sv-eyebrow">Community Voice</span>
+    <h2 class="sv-h2">社区评价 · 他们这样谈论「审问tk丨vk挠脚心」</h2>
+    <div class="sv-comments" style="margin-top:26px;">
+      <article class="sv-comment">
+        <div class="sv-comment-head">
+          <span class="sv-comment-av" style="background:#3f6cb0;">山</span>
+          <b>山里来的小陈</b><time>2026-11-19</time>
+        </div>
+        <div class="sv-stars">★★★★★</div>
+        <p>看完《深夜面馆》那期，真的把我看安静了。没有煽情配乐，就是老老实实听两位老人说话，很久没有看过这么诚实的访谈。</p>
+      </article>
+      <article class="sv-comment">
+        <div class="sv-comment-head">
+          <span class="sv-comment-av" style="background:#7bb894;">阿</span>
+          <b>阿禾的邻居</b><time>2026-11-18</time>
+        </div>
+        <div class="sv-stars">★★★★★</div>
+        <p>剪辑课系列太实用了，尤其是讲呼吸点保留的那期，我照着改了毕业作品，老师直接说节奏变了。希望官网能一直免费更新下去。</p>
+      </article>
+      <article class="sv-comment">
+        <div class="sv-comment-head">
+          <span class="sv-comment-av" style="background:#c99659;">林</span>
+          <b>林间有风</b><time>2026-11-16</time>
+        </div>
+        <div class="sv-stars">★★★★☆</div>
+        <p>内容是真的好，就是希望能再增加一些检索条件，比如按城市或者按拍摄设备筛选，现在找旧片要翻很久。</p>
+      </article>
+      <article class="sv-comment">
+        <div class="sv-comment-head">
+          <span class="sv-comment-av" style="background:#8778c9;">剪</span>
+          <b>剪不动了</b><time>2026-11-15</time>
+        </div>
+        <div class="sv-stars">★★★★★</div>
+        <p>投稿被采纳的时候有点意外。编辑给了很细的修改意见，还补了拍摄补贴，整个过程没有那种被敷衍的感觉，是真的在带新人。</p>
+      </article>
+      <article class="sv-comment">
+        <div class="sv-comment-head">
+          <span class="sv-comment-av" style="background:#63b3bd;">摩</span>
+          <b>摩托老李</b><time>2026-11-12</time>
+        </div>
+        <div class="sv-stars">★★★★☆</div>
+        <p>夜骑那条路线我周末走了一遍，标注的补给点很准。唯一小建议是视频里的路书能不能出个可保存的版本，方便骑行途中看。</p>
+      </article>
+      <article class="sv-comment">
+        <div class="sv-comment-head">
+          <span class="sv-comment-av" style="background:#d17b87;">小</span>
+          <b>小镇放映员</b><time>2026-11-10</time>
+        </div>
+        <div class="sv-stars">★★★★★</div>
+        <p>线下巡回展去了，放映完导演留下来聊了四十多分钟。一个视频品牌愿意做这种不赚钱的事，挺难得的，口碑不是白来的。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S7 企业动态 + 合作品牌 + FAQ -->
+<section class="sv-section sv-section--tight" id="sv-news">
+  <div class="sv-wrap sv-split">
+    <div>
+      <span class="sv-eyebrow">Newsroom</span>
+      <h2 class="sv-h2">企业动态 · 来自官方发布</h2>
+      <ul class="sv-news" style="margin-top:22px;">
+        <li>
+          <div>
+            <h4>「审问tk丨vk挠脚心」第四季创作企划开放投稿</h4>
+            <p>新一季企划聚焦城市夜晚，投稿通道已上线，12 月 20 日截止。入选作品将获得拍摄补贴与首页推荐。</p>
+          </div>
+          <time>11-20</time>
+        </li>
+        <li>
+          <div>
+            <h4>城市影像巡回展公布首批六站城市</h4>
+            <p>首站将于 12 月在旧货市场旁的社区空间开幕，展出 28 部短片，并安排三场创作者对谈。</p>
+          </div>
+          <time>11-15</time>
+        </li>
+        <li>
+          <div>
+            <h4>官网新增章节标记与多档清晰度切换</h4>
+            <p>长访谈内容可直接跳转到指定话题，播放数据看板同步对创作者开放，方便复盘内容节奏。</p>
+          </div>
+          <time>11-08</time>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <span class="sv-eyebrow">Partners</span>
+      <h2 class="sv-h2">合作品牌 · 一起把内容做好</h2>
+      <div class="sv-partners" style="margin-top:22px;">
+        <div class="sv-partner">旧巷书店<small>场地与放映支持</small></div>
+        <div class="sv-partner">南岸陶社<small>手作内容共建</small></div>
+        <div class="sv-partner">夜行单车<small>户外路线合作</small></div>
+        <div class="sv-partner">海盐茶铺<small>线下展映伙伴</small></div>
+      </div>
+      <div class="sv-side-card" style="margin-top:18px;">
+        <h4>投稿与联系</h4>
+        <p style="font-size:13.4px;color:#4e5a6b;margin-bottom:12px;">原创短片欢迎投递，编辑部通常在一周内回复。企业合作请备注需求方向。</p>
+        <button class="sv-btn sv-btn-primary" data-submit style="width:100%;justify-content:center;">进入投稿入口</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sv-section sv-section--tight sv-faq" id="sv-faq">
+  <div class="sv-wrap">
+    <span class="sv-eyebrow">Help Center</span>
+    <h2 class="sv-h2">常见问题 · 关于平台与内容</h2>
+    <div style="margin-top:22px;">
+      <details open>
+        <summary>「审问tk丨vk挠脚心」的视频都可以免费观看吗？</summary>
+        <p>官网绝大多数原创内容免费开放观看。部分专题企划的加长版与幕后特辑会通过会员方式提供，会员权益与价格在播放页内公开标注，不设隐藏收费。</p>
+      </details>
+      <details>
+        <summary>投稿的原创短片有什么具体要求？</summary>
+        <p>时长建议 3 至 15 分钟，画幅不限，需为作者本人原创并拥有完整版权。画面需达到高清标准，音频无明显爆音。投稿时请附上拍摄手记与素材来源说明，便于编辑评估。</p>
+      </details>
+      <details>
+        <summary>如何申请成为签约创作者？</summary>
+        <p>在官网创作者页面提交个人档案与三条代表性作品，编辑部会安排一次线上沟通，了解创作方向与更新节奏。通过后签署内容合作协议，获得拍摄补贴与分发支持。</p>
+      </details>
+      <details>
+        <summary>企业合作可以授权哪些内容使用范围？</summary>
+        <p>我们提供内容授权与二次剪辑授权两种方式。前者可在指定渠道播放完整原片，后者允许在约定范围内重新剪辑。所有授权期限、地域与用途均写入合同。</p>
+      </details>
+      <details>
+        <summary>发现内容侵权或有问题的评论怎么办？</summary>
+        <p>可以在内容页点击举报入口，提交具体链接与说明；评论区同样支持举报。审核团队会在两个工作日内核实处理，处理结果通过站内通知反馈。</p>
+      </details>
+      <details>
+        <summary>线下巡回展需要报名吗？</summary>
+        <p>展览本身免费入场，但每场创作者对谈座位有限，需要在活动页提前预约。预约通道通常在开展前七天开放，名额约满即止。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- S8 页脚 -->
+<footer class="sv-footer">
+  <div class="sv-wrap">
+    <div class="sv-footer-grid">
+      <div>
+        <div class="sv-footer-brand">
+          <span class="sv-brand-mark" style="width:34px;height:34px;border-radius:9px;">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="width:17px;height:17px;"><path d="M8 5l11 7-11 7z" fill="#f5c542"/></svg>
+          </span>
+          审问tk丨vk挠脚心
+        </div>
+        <p>审问tk丨vk挠脚心官方网站 · 版权所有。持续运营的原创影像品牌，专注人物访谈、城市探索与生活记录，以高清正版内容陪伴创作者成长。</p>
+      </div>
+      <div>
+        <h5>内容</h5>
+        <ul>
+          <li><a href="#sv-focus">焦点内容</a></li>
+          <li><a href="#sv-videos">视频社区</a></li>
+          <li><a href="#sv-topics">专题企划</a></li>
+          <li><a href="#sv-rank">内容榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>品牌</h5>
+        <ul>
+          <li><a href="#sv-parse">品牌解析</a></li>
+          <li><a href="#sv-authors">创作者矩阵</a></li>
+          <li><a href="#sv-news">企业动态</a></li>
+          <li><a href="#sv-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>参与</h5>
+        <ul>
+          <li><a href="#sv-news" data-submit-link>投稿入口</a></li>
+          <li><a href="#sv-comments">社区评价</a></li>
+          <li><a href="#sv-news">合作洽谈</a></li>
+          <li><a href="#sv-hero">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sv-footer-bottom">
+      <span>© 2026 审问tk丨vk挠脚心 · 官方网站 · 保留所有权利</span>
+      <span>内容均为原创正版 · 高清呈现 · 持续运营中</span>
+    </div>
+  </div>
+</footer>
+
+<button class="sv-top" id="svTop" aria-label="回到顶部">↑</button>
+<div class="sv-toast" id="svToast" role="status" aria-live="polite"></div>
+
+<!-- 通用模态框 -->
+<div class="sv-modal" id="svModal" role="dialog" aria-modal="true" aria-labelledby="svModalTitle">
+  <div class="sv-modal-panel">
+    <button class="sv-modal-close" id="svModalClose" aria-label="关闭">×</button>
+    <h3 id="svModalTitle">提示</h3>
+    <div id="svModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('svToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+  }
+
+  /* 模态框 */
+  var modal = document.getElementById('svModal');
+  var modalTitle = document.getElementById('svModalTitle');
+  var modalBody = document.getElementById('svModalBody');
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('is-on');
+  }
+  function closeModal(){ modal.classList.remove('is-on'); }
+  document.getElementById('svModalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('svBurger');
+  var nav = document.getElementById('svNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); }
+  });
+
+  /* 搜索前端反馈 */
+  var searchInput = document.getElementById('svSearchInput');
+  var searchHint = document.getElementById('svSearchHint');
+  var searchIndex = [
+    {t:'深夜面馆 第7期', k:'人物访谈 城市探索'},
+    {t:'凌晨四点的早餐铺', k:'创作幕后 实用技巧'},
+    {t:'旧货市场三十年', k:'城市探索 在地文化'},
+    {t:'手作拉坯的第一百次', k:'手作DIY 经验分享'},
+    {t:'夜骑十二公里', k:'户外活动 攻略'},
+    {t:'一个人怎么拍好对话', k:'教程干货 剪辑'},
+    {t:'城市夜行档案', k:'专题 更新中'},
+    {t:'新人视角扶持计划', k:'投稿 扶持'},
+    {t:'老巷镜头', k:'创作者 人物访谈'},
+    {t:'南岸阿禾', k:'创作者 日常记录'}
+  ];
+  var hideTimer = null;
+  searchInput.addEventListener('input', function(){
+    var v = searchInput.value.trim();
+    clearTimeout(hideTimer);
+    if(!v){
+      searchHint.classList.remove('is-on');
+      searchHint.innerHTML = '';
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.t.indexOf(v) > -1 || item.k.indexOf(v) > -1;
+    }).slice(0,5);
+    if(hits.length){
+      searchHint.innerHTML = '找到 ' + hits.length + ' 条相关内容：' +
+        hits.map(function(h){ return '<div style="padding:4px 0;color:#25303f;"><b>' + h.t + '</b> · ' + h.k + '</div>'; }).join('');
+    } else {
+      searchHint.innerHTML = '暂无匹配「<b>' + v.replace(/[<>&]/g,'') + '</b>」的内容，试试“访谈”“手作”“夜骑”。';
+    }
+    searchHint.classList.add('is-on');
+  });
+  searchInput.addEventListener('focus', function(){
+    if(searchInput.value.trim()) searchHint.classList.add('is-on');
+  });
+  searchInput.addEventListener('blur', function(){
+    hideTimer = setTimeout(function(){ searchHint.classList.remove('is-on'); }, 180);
+  });
+
+  /* 点赞 +1/-1 与收藏切换 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-like]');
+    if(likeBtn){
+      var counter = likeBtn.querySelector('[data-like-count]');
+      var num = parseInt(counter.textContent.replace(/[^\d]/g,''), 10) || 0;
+      var on = likeBtn.classList.toggle('is-on');
+      num = on ? num + 1 : Math.max(0, num - 1);
+      counter.textContent = num.toLocaleString('en-US');
+      toast(on ? '已点赞，感谢支持原创内容' : '已取消点赞');
+      return;
+    }
+    var saveBtn = e.target.closest('[data-save]');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('is-saved');
+      saveBtn.textContent = saved ? '已收藏' : '收藏';
+      toast(saved ? '已加入我的收藏夹' : '已取消收藏');
+      return;
+    }
+    var shareBtn = e.target.closest('[data-share]');
+    if(shareBtn){
+      openModal('分享这支视频', 
+        '<p style="margin-bottom:14px;">选择分享方式，或复制页面链接发送给朋友。</p>' +
+        '<div class="sv-share-row">' +
+          '<button data-copylink>复制链接</button>' +
+          '<button data-shareto="微信">微信</button>' +
+          '<button data-shareto="微博">微博</button>' +
+        '</div>');
+      return;
+    }
+    var commentBtn = e.target.closest('[data-comment]');
+    if(commentBtn){
+      openModal('评论区', 
+        '<p style="margin-bottom:14px;">本期已收到 1,286 条社区评论，官方账号会定期回复提问。</p>' +
+        '<div class="sv-field"><label for="cmtInput">写下你的观看感受</label>' +
+        '<textarea id="cmtInput" placeholder="说说这支片子最打动你的一个细节……"></textarea></div>' +
+        '<button class="sv-btn sv-btn-primary" data-sendcomment style="width:100%;justify-content:center;">提交评论</button>');
+      return;
+    }
+    var copyBtn = e.target.closest('[data-copylink]');
+    if(copyBtn){
+      var url = '官网内容页';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          toast('链接已复制到剪贴板');
+        }).catch(function(){
+          toast('复制失败，请手动选择地址栏复制');
+        });
+      } else {
+        toast('当前浏览器不支持自动复制，请手动复制');
+      }
+      return;
+    }
+    var shareTo = e.target.closest('[data-shareto]');
+    if(shareTo){
+      toast('已生成分享卡片，请前往' + shareTo.getAttribute('data-shareto') + '粘贴');
+      return;
+    }
+    var sendComment = e.target.closest('[data-sendcomment]');
+    if(sendComment){
+      var ta = document.getElementById('cmtInput');
+      var val = ta ? ta.value.trim() : '';
+      if(!val){
+        toast('请先写一点内容再提交');
+        return;
+      }
+      closeModal();
+      toast('评论已提交，通过审核后将展示在社区');
+      return;
+    }
+    var authorBtn = e.target.closest('[data-author]');
+    if(authorBtn){
+      var name = authorBtn.getAttribute('data-author');
+      openModal(name + ' · 创作者档案',
+        '<p style="margin-bottom:10px;"><b>擅长领域：</b>' +
+        (name === '南岸阿禾' ? '日常记录、美食烹饪' :
+         name === '泥与手' ? '手作DIY、艺术美学' :
+         name === '剪辑室的灯' ? '教程干货、创作幕后' :
+         name === '周末轨道' ? '户外活动、旅行见闻' :
+         name === '拾光小队' ? '在地文化、人物访谈' : '人物访谈、城市探索') +
+        '</p>' +
+        '<p style="margin-bottom:10px;"><b>合作方式：</b>接受系列企划邀约、联合拍摄与内容授权，具体周期与报价由编辑部统一沟通。</p>' +
+        '<p style="margin-bottom:0;"><b>代表作品：</b>可在视频社区按作者筛选查看全部公开作品与拍摄手记。</p>');
+      return;
+    }
+    var submitBtn = e.target.closest('[data-submit], [data-submit-link]');
+    if(submitBtn){
+      e.preventDefault();
+      openModal('投稿入口',
+        '<p style="margin-bottom:14px;">「审问tk丨vk挠脚心」长期开放原创短片投稿，编辑部一周内回复。</p>' +
+        '<div class="sv-field"><label for="subTitle">作品标题</label><input id="subTitle" type="text" placeholder="给你的片子起个名字"></div>' +
+        '<div class="sv-field"><label for="subDesc">一句话简介</label><input id="subDesc" type="text" placeholder="例如：记录楼下修鞋摊的一天"></div>' +
+        '<button class="sv-btn sv-btn-primary" data-sendsub style="width:100%;justify-content:center;">提交投稿信息</button>');
+      return;
+    }
+    var sendSub = e.target.closest('[data-sendsub]');
+    if(sendSub){
+      var t = document.getElementById('subTitle');
+      var d = document.getElementById('subDesc');
+      if(!t || !t.value.trim()){
+        toast('请填写作品标题');
+        return;
+      }
+      closeModal();
+      toast('投稿信息已提交，请留意站内回复');
+      return;
+    }
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('svTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){ topBtn.classList.add('is-on'); }
+    else { topBtn.classList.remove('is-on'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+})();
+</script>
+</body>
+                                   </html>
